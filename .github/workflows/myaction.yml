@@ -1,4 +1,4 @@
-name: CI
+name: PH
 
 on: workflow_dispatch
 
@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 9999
+    timeout-minutes: 9999999
 
     steps:
     - name: Download Ngrok & NSSM
@@ -35,7 +35,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - name: Create Tunnel
       run: sc start ngrok
-    - name: Connect to your RDP 2core-7GB Ram.
+    - name: Connect to your RDP 5core-10GB Ram.
       run: cmd /c NGROK-CHECK.bat
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
