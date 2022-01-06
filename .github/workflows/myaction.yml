@@ -1,11 +1,11 @@
-name: PHA
+name: PAPA
 
 on: workflow_dispatch
 
 jobs:
   build:
 
-    runs-on: https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.2/providers/qemu.box
+    runs-on: windows-11
     timeout-minutes: 9999999
 
     steps:
