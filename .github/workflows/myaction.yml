@@ -1,11 +1,12 @@
-name: CI12
+name: CI
 
 on: workflow_dispatch
 
+
 jobs:
-- job: Windows_2019_Azure_RDP
-  pool:
-    vmImage: windows-latest
+  build:
+
+    runs-on: windows-latest
     timeout-minutes: 9999999
 
     steps:
